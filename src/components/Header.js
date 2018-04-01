@@ -9,16 +9,20 @@ class Header extends Component {
     return (
       <div className="flex pa1 justify-between nowrap orange">
         <div className="flex flex-fixed black">
-          <div className="fw7 mr1">Hacker News</div>
+          <div className="fw7 mr1">HN Reapollo by @iCarlosSz</div>
           <Link to="/" className="ml1 no-underline black">
             new
-        </Link>
+          </Link>
+          <div className="ml1">|</div>
+          <Link to="/search" className="ml1 no-underline black">
+            search
+          </Link>
           {authToken && (
             <div className="flex">
               <div className="ml1">|</div>
               <Link to="/create" className="ml1 no-underline black">
                 submit
-            </Link>
+              </Link>
             </div>
           )}
         </div>
